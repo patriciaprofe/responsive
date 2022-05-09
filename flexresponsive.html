@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>menú</title>
+<style>
+*{
+  font-family: arial;  
+}
+
+.contenedormenu{                                  
+ display:flex;
+ justify-content: space-around;
+ flex-wrap: wrap;                    /* propiedad que baja el objeto cuando ocupa más que la pantalla */
+}
+ .menu{
+ width:300px;
+ border-top-left-radius: 30px;
+ border-top-right-radius: 30px;
+ box-shadow: 0px 4px 4px rgba(0,0, 0, 1);
+ box-sizing: content-box;
+ margin: 10px;
+ }
+ .fotomenu{
+ width: 100%;
+ height: 200px;
+ border-top-left-radius: 30px;
+ border-top-right-radius: 30px;
+ }
+ .textomenu{
+ text-align: center;
+ padding: 5px;
+ }
+ .textomenu h2{
+ font-family: arial;
+ font: bold;
+ }
+ .textomenu p{
+ font-family: arial;
+ font-size: 18px;
+ }
+ #botonceleste {
+ display: flex;
+ justify-content: center;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 20px;
+ color: white;
+ margin-bottom: 10px;
+ }
+ #botonceleste a{
+ text-decoration: none;
+ color: white;
+ background-color:#079d9c;
+ border-radius: 20px;
+ padding: 10px;
+ width: 200px;
+ }
+ #botonceleste a:hover{     /*pseudoclase  que aplica cuando se posiciona encima del elemento */
+ background-color: #00ff00;
+ border-radius: 20px;
+ width: 200px;
+ color: blue;
+ padding: 10px;
+ }
+ 
+ 
+
+</style>
+</head>
+<body>
+  <h1>Menú </h1>
+  
+ <section class="contenedormenu">
+      <div class="menu">
+           <img class="fotomenu" src="img/milanesa.jpg" alt="milanesa">
+                <div class="textomenu">
+                     <h2> Milanesa</h2>
+                     <p>Milanesa con papas fritas o ensalada</p>
+                     <div id="botonceleste" >
+                         <a href="#" >Opciones</a>
+                     </div>
+                </div>
+     </div>
+      <div class="menu">
+           <img class="fotomenu" src="img/empanadas.jpg" alt="empanadas">
+                <div class="textomenu">
+                  <h2> Empanadas</h2>
+                  <p>Empanadas caseras al horno o fritas</p>
+                 <div id="botonceleste" >
+                      <a href="#" >Opciones</a>
+                 </div>
+              </div>
+     </div>
+      <div class="menu">
+           <img class="fotomenu" src="img/pasta.jpg" alt="pasta">
+                <div class="textomenu">
+                    <h2> Pastas</h2>
+                    <p>pastas caseras con diferentes salsas</p>
+                    <div id="botonceleste" >
+                        <a href="#" >Opciones</a>
+                    </div>
+                </div>
+    </div> 
+ </section>
+</body>
+</html>

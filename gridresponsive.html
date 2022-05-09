@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a Grillas</title>
+    <style>
+ .contenedorgrid{
+        background-color: rgb(231, 123, 90);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px;
+        gap: 1em;
+    
+    }
+
+h2{
+    text-align: center;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+.celda1 {
+    padding: 5px;
+    border: solid 2px ;
+    background-image: url("img/comidaargentina.webp");
+
+    
+}
+.celda2{
+    padding: 5px;
+    border: solid 2px;
+    background-image: url("img/comidainternacional.webp");
+
+    
+}
+.celda3 {
+    padding: 5px;
+    border: solid 2px ;
+    background-image: url("img/comidadieta.webp");
+    
+
+    
+}
+.celda4 {
+
+    padding: 5px;
+    border: solid 2px;
+    background-image: url("img/comidaceliacos.jpg");
+
+    
+}
+.celda5 {
+    padding: 5px;
+    border: solid 2px;
+    background-image: url("img/comidavegana.jpg");
+
+
+    
+}
+.celda6 {
+    padding: 5px;
+    border: solid 2px;
+    background-image: url("img/vianda.webp");
+}
+
+h2 a{
+    text-decoration: none;
+    color: yellow;
+}
+h2 a:hover{
+    color:red;
+}
+@media ( max-width: 990px ) {
+    .contenedorgrid{
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 200px 200px;
+        gap: 1em;
+    
+    } 
+}
+@media ( max-width: 765px ) {
+    .contenedorgrid{
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 200px 200px 200px 200px 200px;
+        gap: 1em;
+    
+    } 
+}
+
+ </style>
+
+</head>
+<body>
+    <h1> Nuestras especialidades</h1>
+    <div class="contenedorgrid">
+<div class="celda1">
+    <h2 class="botongrid"><a href="#"> Cocina tradicional argentina </a></h2>
+</div>
+<div class="celda2">
+    <h2><a href="#"> Cocina Internacional</a></h2>
+</div>
+<div class="celda3">
+    <h2 class="botongrid"><a href="#">Dietas personalizadas</a> </h2>
+</div>
+<div class="celda4">
+    <h2 class="botongrid"> <a href="#">Menú para celíacos</a></h2>
+</div>
+<div class="celda5">
+    <h2 class="botongrid"><a href="#"> Cocina vegana</a></h2>
+</div>
+<div class="celda6">
+    <h2 class="botongrid"><a href="#">Armá tu pedido</a> </h2>
+</div>
+
+</body>
+</html>
